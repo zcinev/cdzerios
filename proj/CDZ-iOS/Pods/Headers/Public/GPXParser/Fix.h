@@ -1,0 +1,1 @@
+../../../../Frameworks/gpx-parser-cocoa/GPXParser/Models/Fix.h

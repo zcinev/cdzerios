@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>35886AE4-5F16-41D6-89FA-404CFA9A1269</string>
+	<key>IDESourceControlProjectName</key>
+	<string>cdzer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75</key>
+		<string>https://github.com/patricks/gpx-parser-cocoa.git</string>
+		<key>7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404</key>
+		<string>https://192.168.1.53/svn/CDZ/trunk/iOS-Project/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cdzer.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75</key>
+		<string>../../Frameworks/gpx-parser-cocoa</string>
+		<key>7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404</key>
+		<string>https://192.168.1.53/svn/CDZ</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.53/svn/CDZ/trunk/iOS-Project/trunk/cdzer.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CDZ-iOS</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gpx-parser-cocoa</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,174 @@
+//
+//  cdzer-Prefix.pch
+//  cdzer
+//
+//  Created by KEns0n on 2/6/15.
+//  Copyright (c) 2015 CDZER. All rights reserved.
+//
+
+#ifndef cdzer_Prefix_pch 
+#define cdzer_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "BaseViewController.h"
+#import "BaseTableViewController.h"
+#import "BaseNavigationController.h"
+#import "BaseTabBarController.h"
+#import "SupportingClass.h"
+#import "ImageHandler.h"
+#import "DBHandler.h"
+#import "ProgressHUDHandler.h"
+#import "SecurityCryptor.h"
+#import "APIsConnection.h"
+#import "UserBehaviorHandler.h"
+
+
+// Noti Key Define
+//static NSString * const BaseURLString = @"http://portal.bccar.net/";
+//static NSString * const BaseURLString = @"http://192.168.1.53:8080/";
+//static NSString * const BaseURLString = @"http://192.168.1.185:8080/";
+//static NSString * const BaseURLString = @"http://192.168.1.138:8080/";
+static NSString * const BaseURLString = @"http://www.bccar.net/";
+
+static NSString *const CDZNotiKeyOfUpdateAutoGPSInfo = @"CDZNotiKeyOfUpdateAutoGPSInfo";
+static NSString *const CDZNotiKeyOfManualUpdateAutoGPSInfo = @"CDZNotiKeyOfManualUpdateAutoGPSInfo";
+static NSString *const CDZNotiKeyOfReloadOrderList = @"CDZNotiKeyOfReloadOrderList";
+static NSString *const CDZNotiKeyOfTokenUpdate = @"CDZNotiKeyOfTokenUpdate";
+static NSString *const CDZNotiKeyOfUpdateLocation = @"CDZNotiKeyOfUpdateLocation";
+static NSString *const CDZNotiKeyOfSelectOrderViewInTabBarVC = @"CDZNotiKeyOfSelectOrderViewInTabBarVC";
+
+static NSString *const CDZNotiKeyOfSelectedRepairItemsUpdate = @"CDZNotiKeyOfSelectedRepairItemsUpdate";
+static NSString *const CDZNotiKeyOfSelectedMaintenanceItemsUpdate = @"CDZNotiKeyOfSelectedMaintenanceItemsUpdate";
+static NSString *const CDZNotiKeyOfSelectedAddress = @"CDZNotiKeyOfSelectedAddress";
+static NSString *const CDZNotiKeyOfUpdateScrollViewOffset = @"CDZNotiKeyOfUpdateScrollViewOffset";
+static NSString *const CDZKeyOfSelectedKeyCity = @"CDZKeyOfSelectedKeyCity";
+static NSString *const CDZKeyOfSelectedAutosInfo = @"CDZKeyOfSelectedAutosInfo";
+
+// NSUserDefaults Setting Key
+#define kRunUpdateAutoRTData @"updateAutoRTDataSwitch"
+
+// ArchiverKey
+#define kArchiverKeyOfType @"archived"
+#define kSelectedCityArchiverKey @"selectedCityAK"
+
+
+// sysFilePath Define
+#define kSysImageCaches @"SysImageCaches"
+#define kDataKeyedArchiverPath @"DataKeyedArchiverPath"
+#define kUserPortraitCaches @"UserPortraitCaches"
+
+
+/* HelveticaNeue-Font */
+#define vGetHelveticaNeueFont(fontType, fontSize, isNeedAdjust) [SupportingClass getHelveticaNeueFontType:fontType withFontSize:fontSize isAdjustByRatio:isNeedAdjust]
+/* HelveticaNeue-Font */
+
+
+/* Autos Data */
+
+#define CDZAutosKeyOfBrandID @"brand_id"
+#define CDZAutosKeyOfBrandName @"brand_name"
+#define CDZAutosKeyOfBrandIcon @"brand_icon"
+#define CDZAutosKeyOfDealershipID @"dealership_id"
+#define CDZAutosKeyOfDealershipName @"dealership_name"
+#define CDZAutosKeyOfSeriesID @"auto_series_id"
+#define CDZAutosKeyOfSeriesName @"auto_series_name"
+#define CDZAutosKeyOfModelID @"auto_model_id"
+#define CDZAutosKeyOfModelName @"auto_model_name"
+
+/* Autos Data */
+
+#define kUserPathWithUser(user) [@"Users" stringByAppendingString:user]
+#define vGetUserToken UserBehaviorHandler.shareInstance.getUserToken
+#define vGetUserID UserBehaviorHandler.shareInstance.getUserID
+#define vGetUserType UserBehaviorHandler.shareInstance.getUserType
+#define vGetUserTypeName UserBehaviorHandler.shareInstance.getUserTypeName
+#define getLocalizationString(string) [SupportingClass getLocalizationString:string]
+
+#define DefaultEdgeInsets UIEdgeInsetsMake(0.0f, 15.0f, 0.0f, 15.0f)
+
+#define vNavBarHeight 44.0f
+#define vO2OSpaceSpace 8.0f
+#define vMinPhoneWidth 320.0f
+#define vWidthRatio CGRectGetWidth([UIScreen mainScreen].bounds)/vMinPhoneWidth
+#define vAdjustByScreenRatio(value) vWidthRatio*value
+
+#define systemFont(size) [UIFont systemFontOfSize:vAdjustByScreenRatio(size)]
+#define systemFontBold(size) [UIFont boldSystemFontOfSize:vAdjustByScreenRatio(size)]
+
+#define systemFontWithoutRatio(size) [UIFont systemFontOfSize:size]
+#define systemFontBoldWithoutRatio(size) [UIFont boldSystemFontOfSize:size]
+
+#define sCommonBGColor [UIColor colorWithRed:0.953f green:0.953f blue:0.953f alpha:1.00f]
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+#define IS_SIMULATOR (TARGET_IPHONE_SIMULATOR==1)
+
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define alertFrame CGRectMake(20, SCREEN_HEIGHT-140,SCREEN_WIDTH-40, 35)
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0f)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0f)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0f)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0f)
+#define IS_IPHONE_5_ABOVE (IS_IPHONE_6P || IS_IPHONE_6 || IS_IPHONE_5)
+
+#define CDZColorOfClearColor    [UIColor clearColor]
+#define CDZColorOfTureRed       [UIColor colorWithRed:255.0 / 255.0 green:0.0 / 255.0 blue:0.0 / 255.0 alpha:1.0f]
+#define CDZColorOfDefaultColor  [UIColor colorWithRed:0.125f green:0.675f blue:0.929f alpha:1.00f]
+#define CDZColorOfGray          [UIColor colorWithRed:246.0 / 255.0 green:246.0 / 255.0 blue:246.0 / 255.0 alpha:1.0f]
+#define CDZColorOfLightBlue     [UIColor colorWithRed:94.0 / 255.0 green:147.0 / 255.0 blue:196.0 / 255.0 alpha:1.0f]
+#define CDZColorOfGreen         [UIColor colorWithRed:77.0 / 255.0 green:186.0 / 255.0 blue:122.0 / 255.0 alpha:1.0f]
+#define CDZColorOfTitleColor    [UIColor colorWithRed:0.0 / 255.0 green:189.0 / 255.0 blue:113.0 / 255.0 alpha:1.0f]
+#define CDZColorOfButtonGray    [UIColor colorWithRed:141.0 / 255.0 green:141.0 / 255.0 blue:141.0 / 255.0 alpha:1.0f]
+#define CDZColorOfLightGreen    [UIColor colorWithRed:77.0 / 255.0 green:216.0 / 255.0 blue:122.0 / 255.0 alpha:1.0f]
+#define CDZColorOfFreshGreen    [UIColor colorWithRed:77.0 / 255.0 green:196.0 / 255.0 blue:122.0 / 255.0 alpha:1.0f]
+#define CDZColorOfDeepGreen     [UIColor colorWithRed:77.0 / 255.0 green:176.0 / 255.0 blue:122.0 / 255.0 alpha:1.0f]
+#define CDZColorOfRed           [UIColor colorWithRed:245.0 / 255.0 green:94.0 / 255.0 blue:78.0 / 255.0 alpha:1.0f]
+#define CDZColorOfMauve         [UIColor colorWithRed:88.0 / 255.0 green:75.0 / 255.0 blue:103.0 / 255.0 alpha:1.0f]
+#define CDZColorOfBrown         [UIColor colorWithRed:119.0 / 255.0 green:107.0 / 255.0 blue:95.0 / 255.0 alpha:1.0f]
+#define CDZColorOfBlue          [UIColor colorWithRed:82.0 / 255.0 green:116.0 / 255.0 blue:188.0 / 255.0 alpha:1.0f]
+#define CDZColorOfDarkBlue      [UIColor colorWithRed:121.0 / 255.0 green:134.0 / 255.0 blue:142.0 / 255.0 alpha:1.0f]
+#define CDZColorOfYellow        [UIColor colorWithRed:242.0 / 255.0 green:197.0 / 255.0 blue:117.0 / 255.0 alpha:1.0f]
+#define CDZColorOfWhite         [UIColor colorWithRed:255.0 / 255.0 green:255.0 / 255.0 blue:255.0 / 255.0 alpha:1.0f]
+#define CDZColorOfDeepGray      [UIColor colorWithRed:99.0 / 255.0 green:99.0 / 255.0 blue:99.0 / 255.0 alpha:1.0f]
+#define CDZColorOfPinkGray      [UIColor colorWithRed:200.0 / 255.0 green:193.0 / 255.0 blue:193.0 / 255.0 alpha:1.0f]
+#define CDZColorOfHealYellow    [UIColor colorWithRed:245.0 / 255.0 green:242.0 / 255.0 blue:238.0 / 255.0 alpha:1.0f]
+#define CDZColorOfLightGray     [UIColor colorWithRed:225.0 / 255.0 green:225.0 / 255.0 blue:225.0 / 255.0 alpha:1.0f]
+#define CDZColorOfCleanGray     [UIColor colorWithRed:251.0 / 255.0 green:251.0 / 255.0 blue:251.0 / 255.0 alpha:1.0f]
+#define CDZColorOfLightYellow   [UIColor colorWithRed:241.0 / 255.0 green:240.0 / 255.0 blue:240.0 / 255.0 alpha:1.0f]
+#define CDZColorOfDarkYellow    [UIColor colorWithRed:152.0 / 255.0 green:150.0 / 255.0 blue:159.0 / 255.0 alpha:1.0f]
+#define CDZColorOfPinkDark      [UIColor colorWithRed:170.0 / 255.0 green:165.0 / 255.0 blue:165.0 / 255.0 alpha:1.0f]
+#define CDZColorOfCloudWhite    [UIColor colorWithRed:244.0 / 255.0 green:244.0 / 255.0 blue:244.0 / 255.0 alpha:1.0f]
+#define CDZColorOfBlack         [UIColor colorWithRed:45.0 / 255.0 green:45.0 / 255.0 blue:45.0 / 255.0 alpha:1.0f]
+#define CDZColorOfStarYellow    [UIColor colorWithRed:252.0 / 255.0 green:223.0 / 255.0 blue:101.0 / 255.0 alpha:1.0f]
+#define CDZColorOfTwitterColor  [UIColor colorWithRed:0.0 / 255.0 green:171.0 / 255.0 blue:243.0 / 255.0 alpha:1.0]
+#define CDZColorOfWeiboColor    [UIColor colorWithRed:250.0 / 255.0 green:0.0 / 255.0 blue:33.0 / 255.0 alpha:1.0]
+#define CDZColorOfiOSGreenColor [UIColor colorWithRed:98.0 / 255.0 green:247.0 / 255.0 blue:77.0 / 255.0 alpha:1.0]
+#define CDZColorOfOrangeColor   UIColor.orangeColor
+
+#define CDZColorOfTxtDefaultColor           UIColor.blackColor
+#define CDZColorOfTxtGaryColor              [SupportingClass colorWithHexString:@"666666"]
+#define CDZColorOfTxtDeepGaryColor          [SupportingClass colorWithHexString:@"333333"]
+#define CDZColorOfBackgroudColor            [SupportingClass colorWithHexString:@"EEEEEE"]
+#define CDZColorOfSeperateLineColor         [SupportingClass colorWithHexString:@"E5E5E5"]
+#define CDZColorOfSeperateLineDeepColor     [SupportingClass colorWithHexString:@"CCCCCC"]
+#define CDZColorOfTimeTxtDefaultColor       [SupportingClass colorWithHexString:@"999999"]
+
+#endif
+
+//#ifdef __OBJC__
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+//#endif

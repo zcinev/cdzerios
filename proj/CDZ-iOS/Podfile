@@ -1,0 +1,77 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '7.0'
+
+target 'cdzer' do
+
+# SQLite Framework and other Plugin
+pod 'FMDB'
+# pod 'FMDB/FTS'   # FMDB with FTS
+# pod 'FMDB/standalone'   # FMDB with latest SQLite amalgamation source
+# pod 'FMDB/standalone/FTS'   # FMDB with latest SQLite amalgamation source and FTS
+# pod 'FMDB/SQLCipher'   # FMDB with SQLCipher
+
+# HTTPRequest Framework & extension
+pod 'AFNetworking-RACExtensions', '~> 0.1.6'
+pod "AFNetworking", "~> 2.0"
+
+# RemindHUD Framwork
+#pod 'MBProgressHUD', '~> 0.8'
+#pod 'MBProgressHUD', :path => '../Frameworks/MBProgressHUD_NBlur/'
+#podspec :path => "../Frameworks/MBProgressHUD_NBlur/MBProgressHUD.podspec"
+pod 'KVNProgress', '~> 2.2.1'
+
+# Graphics Framework
+pod 'GPUImage', '~> 0.1.6'
+
+# Chart Framework
+pod 'PNChart', '~> 0.7.5'
+
+# GPXParser
+pod 'GPXParser', :path => 'Frameworks/gpx-parser-cocoa/'
+podspec :path => "Frameworks/gpx-parser-cocoa/GPXParser.podspec"
+
+# RefreshControl
+pod 'ODRefreshControl', '~> 1.1.0'
+pod 'MJRefresh'
+
+# UIView Borders
+# pod 'NAUIViewWithBorders', :path => ‘Frameworks/NAUIView/'
+# podspec :path => “Frameworks/NAUIView/NAUIViewWithBorders.podspec"
+
+# Encryption
+#pod 'RNCryptor', '~> 2.2'
+pod 'CocoaSecurity', '~> 1.2.4'
+
+# IQDropDownTextField 
+#pod 'IQDropDownTextField'
+
+# VENSeparatorView
+#pod 'VENSeparatorView', '~> 1.0.0'
+
+# CRChecker
+#pod 'CRChecker'
+
+# AFViewShaker
+# pod "AFViewShaker", "~> 0.0.2"
+
+# FXBlurView
+pod 'FXBlurView', '~> 1.6.3'
+
+# UIView+Borders
+pod 'UIView+Borders', '~> 0.0.2'
+
+# Network Image Handle 
+pod 'SDWebImage', '~>3.7'
+
+# File Manager
+pod 'FCFileManager'
+
+# PinYin4Objc
+pod 'PinYin4Objc', '~> 1.1.1'
+
+end
+
+target 'cdzerTests' do
+
+end
+

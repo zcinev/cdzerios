@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AB47C319-4C17-4851-8D29-435C4E1728AB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404" : "CDZ-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "cdzer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cdzer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.53\/svn\/CDZ",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7208f5d6-0e17-2d43-a4c6-8eae95faafd0++9404"
+    }
+  ]
+}

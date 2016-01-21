@@ -1,0 +1,52 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++8F15F71",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++3231B55" : {
+
+    },
+    "7208f5d6-0e17-2d43-a4c6-8eae95faafd0++7410+++84FEA8F" : {
+
+    },
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++8F15F71" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++8F15F71" : 0,
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++1A631D5" : 0,
+    "7208f5d6-0e17-2d43-a4c6-8eae95faafd0++7410+++84FEA8F" : 0,
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++3231B55" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "35886AE4-5F16-41D6-89FA-404CFA9A1269",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++8F15F71" : "Frameworks\/gpx-parser-cocoa",
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++1A631D5" : "CDZ-iOS\/Frameworks\/gpx-parser-cocoa\/",
+    "7208f5d6-0e17-2d43-a4c6-8eae95faafd0++7410+++84FEA8F" : "CDZ-iOS",
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++3231B55" : "Frameworks\/gpx-parser-cocoa"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "cdzer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cdzer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/patricks\/gpx-parser-cocoa.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++1A631D5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.53\/svn\/CDZ",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++3231B55"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/patricks\/gpx-parser-cocoa.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++8F15F71"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.53\/svn\/CDZ",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7208f5d6-0e17-2d43-a4c6-8eae95faafd0++7410+++84FEA8F"
+    }
+  ]
+}

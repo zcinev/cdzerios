@@ -1,0 +1,95 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking-RACExtensions (0.1.8):
+    - AFNetworking (~> 2.5.3)
+    - ReactiveCocoa (~> 2.0)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CocoaSecurity (1.2.4)
+  - FCFileManager (1.0.17)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - FXBlurView (1.6.4)
+  - GPUImage (0.1.7)
+  - GPXParser (1.0)
+  - KVNProgress (2.2.1)
+  - MJRefresh (2.4.12)
+  - ODRefreshControl (1.1.0)
+  - PinYin4Objc (1.1.1)
+  - PNChart (0.7.5):
+    - UICountingLabel (~> 1.0.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - UICountingLabel (1.0.0)
+  - UIView+Borders (0.0.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - AFNetworking-RACExtensions (~> 0.1.6)
+  - CocoaSecurity (~> 1.2.4)
+  - FCFileManager
+  - FMDB
+  - FXBlurView (~> 1.6.3)
+  - GPUImage (~> 0.1.6)
+  - GPXParser (from `Frameworks/gpx-parser-cocoa/`)
+  - KVNProgress (~> 2.2.1)
+  - MJRefresh
+  - ODRefreshControl (~> 1.1.0)
+  - PinYin4Objc (~> 1.1.1)
+  - PNChart (~> 0.7.5)
+  - SDWebImage (~> 3.7)
+  - UIView+Borders (~> 0.0.2)
+
+EXTERNAL SOURCES:
+  GPXParser:
+    :path: Frameworks/gpx-parser-cocoa/
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AFNetworking-RACExtensions: a043c6b492fa892395ceb9d20bc4c94e96e08a57
+  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  FCFileManager: 8bfc931ce2a6223676147e9baf0e8a65c691eca6
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  GPXParser: 38cc04383cccaeea5cba80f7e0941273ba2d8222
+  KVNProgress: 7001d2d16a2755cee5599e8e485befe056f2197b
+  MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
+  ODRefreshControl: 4c4c413bf70d2ea0c02a28ac0a0b3b4bf4dbfdea
+  PinYin4Objc: 3fa9673610368330e2dfb688b1d19a35c3930a78
+  PNChart: 8004ea2d9c16434692b29b0cfc3917133b18509a
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  UICountingLabel: 540feeca6bbb78be892c8ab75b6ad02313cb2b10
+  UIView+Borders: d632c8bef679e7f98e913b569e972858742841ce
+
+COCOAPODS: 0.38.2
