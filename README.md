@@ -1,2 +1,0 @@
-# cdzerios
-ios project
