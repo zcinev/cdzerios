@@ -1,0 +1,281 @@
+/*
+    bootstrap样式重置
+*/
+.navbar{
+    width: auto;
+}
+.navbar-inverse,.navbar-default{
+    min-width: 1050px;
+}
+.row{
+    width: 1020px;
+    margin: 0 auto;
+    display: block;
+}
+.col-md-1{
+    width: 85px;
+    display: block;
+}
+.col-md-2{
+    width: 170px;
+    display: block;
+}
+.col-md-3{
+    width: 255px;
+    display: block;
+}
+.col-md-4{
+    width: 340px;
+    display: block;
+}
+.col-md-5{
+    width: 425px;
+    display: block;
+}
+.col-md-6{
+    width: 510px;
+    display: block;
+}
+.col-md-7{
+    width: 595px;
+    display: block;
+}
+.col-md-8{
+    width: 680px;
+    display: block;
+}
+.col-md-9{
+    width: 765px;
+    display: block;
+}
+.col-md-10{
+    width: 850px;
+    display: block;
+}
+.col-md-11{
+    width: 935px;
+    display: block;
+}
+.col-md-12{
+    width: 1020px;
+    display: block;
+}
+.tab-pane{
+    padding-top: 10px;
+}
+
+/*==========================*/
+.width-auto{
+    width: auto;
+}
+.marginLeft0{
+    margin-left: 0;
+}
+.marginRight0{
+    margin-right: 0;
+}
+.marginTop0{
+    margin-top: 0;
+}
+.marginBottom0{
+    margin-bottom: 0;
+}
+.paddingTop0{
+    padding-top: 0;
+}
+.paddingRight0{
+    padding-right: 0;
+}
+.paddingBottom0{
+    padding-bottom: 0;
+}
+.paddingLeft0{
+    padding-left: 0;
+}
+.border-bottom-1{
+    border-bottom: 1px solid #ccc;
+}
+.border-top-1{
+    border-top: 1px solid #ccc;
+}
+.row-marginTop5{
+    margin-top: 5px;
+}
+.breadcrumb-marginBottom5{
+    margin-bottom: 5px;
+}
+.row-box-shadow-2{
+    box-shadow: 1px 1px 3px #333;
+    margin-top: 10px;
+}
+.tr-title-border{
+    border:1px solid #ccc;
+    border-top:2px solid #428bca;
+}
+.tr-body-border{
+    border: 1px solid #ccc;
+}
+.pay-list{
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+}
+.pay-list li{
+    width: auto;
+    display: block;
+    float: left;
+    border: none;
+}
+
+.member-bg{
+    height: 105px;
+    background-image: url('../img/newmember_bg.png');
+}
+
+.cdzer-home{
+	font-size: 1.5em;
+	color: #fff;
+}
+.cdzer-navtop{
+	padding-top: 7px;
+}
+.cdzer-navmid{
+	height: auto;
+}
+.search-hot{
+	font-size: 12px;
+}
+.search-hot dt{
+	display: inline;
+}
+.search-hot dd{
+	display: inline;
+}
+.search-hot dd .member-hot-text{
+    color: #fff;
+}
+.glyphicon-lg{
+	font-size: 2.0em;
+}
+.czder-slide{
+	height: 400px;
+}
+.cdzer-help{
+	padding-right: 0;
+}
+.child-list{
+    margin-bottom: 5px;
+}
+.list-title{
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+.list-body{
+    font-size: 12px;
+    text-indent: 25px;
+}
+.bottom-spacing-0{
+    margin-bottom: 0;
+    padding: 0;
+}
+.th-align-right{
+    text-align: right;
+}
+.td-align-left{
+    text-align: left;
+}
+
+.cdzer-help{
+    width: 200px;
+    display: block;
+    float: left;
+    margin-top: 0;
+}
+
+/*unslider*/
+.banner { position: relative; overflow: auto; height: 370px;}
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+
+#baidu-map{
+    width: 200px;
+    margin-right: 4px;
+}
+.caigou-intro{
+    width: 390px;
+    /*float: right;*/
+}
+
+/*密码强度样式*/
+.pw-strength{
+    border: 1px solid #fff;
+}
+.pw-strength span{
+    display: block;
+    float: left;
+    height: 18px;
+    width: 55px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    border-right: 3px solid white;
+    background-color: #ccc;
+}
+
+.uploaded-img,.sample-img{
+    width:210px;
+    height:210px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.sample-img img{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    margin: 5px;
+    border: none;
+}
+
+.comment-star span{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/*分页样式*/
+.label-page{
+	margin:20px 2px;
+	padding:11px;
+}
+.pager-form{
+    width: 105px;
+    display: block;
+    float: right;
+    margin-top:20px;
+}
+.pager-form label{
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+.pager-form input{
+    display: block;
+    float: left;
+    width: 60px;
+}
+
+.td-blue{
+    color: #428BCA;
+}
+.order-detail{
+    width:90%;
+    margin:20px auto;
+    text-align:left;
+}
+.order-detail dd{
+    line-height: 35px;
+}

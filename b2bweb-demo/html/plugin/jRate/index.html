@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<title>Jquery星级评分插件 - Jquery-school</title>
+<meta name="author" content="Jquery-School" />
+<meta name="Copyright" content="Jquery-School,www.jq-school.com" />
+<meta name="keywords" content="Jquery,Jquery资源,前端设计,div+css" />
+<meta name="description" content="" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link href="css/public.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="jquery/jRating.jquery.css" type="text/css" />
+	
+	<style type="text/css">
+		body {margin:15px;font-family:Arial;font-size:13px; background:#fff;}
+		a img{border:0}
+		.datasSent, .serverResponse{margin-top:20px;width:470px;height:73px;border:1px solid #F0F0F0;background-color:#F8F8F8;padding:10px;float:left;margin-right:10px}
+		.datasSent{width:200px;position:fixed;left:680px;top:0}
+		.serverResponse{position:fixed;left:680px;top:100px}
+		.datasSent p, .serverResponse p {font-style:italic;font-size:12px}
+		.exemple{margin-top:15px;}
+		.clr{clear:both}
+		pre {margin:0;padding:0}
+		.notice {background-color:#F4F4F4;color:#666;border:1px solid #CECECE;padding:10px;font-weight:bold;width:600px;font-size:12px;margin-top:10px}
+	</style>
+</head>
+<body>
+
+  <span style="font-size:15px; font-weight:bold; text-align:center; line-height:25px; color:#000; width:100%">Jquery星级评分插件<br />
+  <a href="http://www.jq-school.com" target="_blank" style="color:#000">JquerySchool</a>网站出品（<a href="http://www.jq-school.com" style="color:#000" target="_blank">http://www.jq-school.com</a>） <br />
+   <a href="http://www.jq-school.com/shop/" target="_blank" style="color:#000">9.9元全国包邮商店</a> <br />
+  <a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=6fcb83942dc3630777ae7745bd5093a1a5917f915f4e95cfc498633379ebfbb4">官方网站学习交流QQ群<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" style="width:90px; height:22px;" alt="Jquery学堂QQ⑤群" width="90" height="22" title="Jquery学堂QQ⑤群"></a></span>
+
+<p><a href="#">Back to MyjQueryPlugins</a></p>
+
+<!-- EXEMPLE 1 : BASIC -->
+<div class="exemple">
+	<em>Exemple 1 (<strong>Basic exemple without options</strong>) :</em>
+	<div class="basic" id="12_1"></div>
+</div>
+		<div class="notice">
+<pre>
+&lt;!-- JS to add --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function(){
+	$(&quot;.basic&quot;).jRating();
+  });
+&lt;/script&gt;</pre>
+		</div>
+
+<!-- EXEMPLE 2 -->
+<div class="exemple">
+	<em>Exemple 2 (type : <strong>small</strong> - average <strong>10</strong> - id <strong>2</strong> - <strong>40</strong> stars) :</em>
+	<div class="exemple2" id="10_2"></div>
+</div>
+<div class="notice">
+<pre>
+&lt;!-- JS to add --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function(){
+	$(&quot;.exemple2&quot;).jRating({
+	  type:'small', // type of the rate.. can be set to 'small' or 'big'
+	  length : 40, // nb of stars
+	  decimalLength : 1 // number of decimal in the rate
+	});
+  });
+&lt;/script&gt;
+</pre>
+</div>
+	
+<!-- EXEMPLE 3 -->
+<div class="exemple">
+	<em>Exemple 3 (step : <strong>true</strong> - average <strong>18</strong> - id <strong>3</strong> - <strong>15</strong> stars) :</em>
+	<div class="exemple3" id="18_3"></div>
+</div>
+<div class="notice">
+<pre>
+&lt;!-- JS to add --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function(){
+	$(&quot;.exemple3&quot;).jRating({
+	  step:true,
+	  length : 20, // nb of stars
+	  decimalLength:0 // number of decimal in the rate
+	});
+  });
+&lt;/script&gt;
+</pre>
+</div>
+
+<!-- EXEMPLE 4 -->
+<div class="exemple">
+	<em>Exemple 4 (<strong>Rate is disabled</strong>) :</em>
+	<div class="exemple4" id="10_4"></div>
+</div>
+<div class="notice">
+<pre>
+&lt;!-- JS to add --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function(){
+	$(&quot;.exemple4&quot;).jRating({
+	  isDisabled : true
+	});
+  });
+&lt;/script&gt;
+</pre>
+</div>
+
+<!-- EXEMPLE 5 -->
+<div class="exemple">
+	<em>Exemple 5 (<strong>With onSuccess &amp; onError methods</strong>) :</em>
+	<div class="exemple5" id="10_5"></div>
+</div>
+<div class="notice">
+<pre>
+&lt;!-- JS to add --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function(){
+	$(&quot;.exemple5&quot;).jRating({
+	  length:10,
+	  decimalLength:1,
+	  onSuccess : function(){
+		alert('Success : your rate has been saved :)');
+	  },
+	  onError : function(){
+		alert('Error : please retry');
+	  }
+	});
+  });
+&lt;/script&gt;
+</pre>
+</div>
+
+<!-- EXEMPLE 5 -->
+<div class="exemple">
+	<em>Exemple 6 (<strong>Disabled rate info</strong>) :</em>
+	<div class="exemple6" id="10_5"></div>
+</div>
+<div class="notice">
+<pre>
+&lt;!-- JS to add --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function(){
+	$(&quot;.exemple6&quot;).jRating({
+	  onSuccess : function(){
+		jSuccess('Success : your rate has been saved :)',{
+		  HorizontalPosition:'center',
+		  VerticalPosition:'top'
+		});
+	  },
+	  onError : function(){
+		jError('Error : please retry');
+	  }
+	});
+  });
+&lt;/script&gt;
+</pre>
+</div>
+
+
+
+<div class="datasSent">
+	Datas sent to the server :
+	<p></p>
+</div>
+<div class="serverResponse">
+	Server response :
+	<p></p>
+</div>
+
+	<script type="text/javascript" src="jquery/jRating.jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.basic').jRating();
+			
+			$('.exemple2').jRating({
+				type:'small',
+				length : 40,
+				decimalLength : 1
+			});
+			
+			$('.exemple3').jRating({
+				step:true,
+				length : 20
+			});
+			
+			$('.exemple4').jRating({
+				isDisabled : true
+			});
+			
+			$('.exemple5').jRating({
+				length:10,
+				decimalLength:1,
+				onSuccess : function(){
+					alert('Success : your rate has been saved :)');
+				},
+				onError : function(){
+					alert('Error : please retry');
+				}
+			});
+			
+			$(".exemple6").jRating({
+			  length:10,
+			  decimalLength:1,
+			  showRateInfo:false
+			});
+		});
+	</script>
+</body>
+</html>
